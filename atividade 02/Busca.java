@@ -12,44 +12,151 @@ public class Busca {
         preencherOrdenado(vetor10000);
         preencherOrdenado(vetor100000);
 
-        long inicio = System.nanoTime();
+        long inicio, fim, duracaoMs;
 
-        // Para cada vetor, realizar buscas em três posições:inicio, meio e fim
-        // primeiro vetor
+        System.out.println("=== VETOR DE 1.000 ELEMENTOS ===");
+        
+        System.out.println("\n--- Busca Linear ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
         buscaLinear(vetor1000, vetor1000[0]);
-        buscaLinear(vetor1000, vetor1000[vetor1000.length / 2]);
-        buscaLinear(vetor1000, vetor1000[vetor1000.length -1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
 
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        buscaLinear(vetor1000, vetor1000[(vetor1000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        buscaLinear(vetor1000, vetor1000[vetor1000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.println("\n--- Busca Binária ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
         buscaBinaria(vetor1000, vetor1000[0]);
-        buscaBinaria(vetor1000, vetor1000[vetor1000.length / 2]);
-        buscaBinaria(vetor1000, vetor1000[vetor1000.length -1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
 
-        // segundo vetor
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        buscaBinaria(vetor1000, vetor1000[(vetor1000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        buscaBinaria(vetor1000, vetor1000[vetor1000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+
+        System.out.println("\n=== VETOR DE 10.000 ELEMENTOS ===");
+        
+        System.out.println("\n--- Busca Linear ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
         buscaLinear(vetor10000, vetor10000[0]);
-        buscaLinear(vetor10000, vetor10000[vetor10000.length / 2]);
-        buscaLinear(vetor10000, vetor10000[vetor10000.length -1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
 
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        buscaLinear(vetor10000, vetor10000[(vetor10000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        buscaLinear(vetor10000, vetor10000[vetor10000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.println("\n--- Busca Binária ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
         buscaBinaria(vetor10000, vetor10000[0]);
-        buscaBinaria(vetor10000, vetor10000[vetor10000.length / 2]);
-        buscaBinaria(vetor10000, vetor10000[vetor10000.length -1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
 
-        // terceiro vetor
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        buscaBinaria(vetor10000, vetor10000[(vetor10000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        buscaBinaria(vetor10000, vetor10000[vetor10000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+
+        System.out.println("\n=== VETOR DE 100.000 ELEMENTOS ===");
+        
+        System.out.println("\n--- Busca Linear ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
         buscaLinear(vetor100000, vetor100000[0]);
-        buscaLinear(vetor100000, vetor100000[vetor100000.length / 2]);
-        buscaLinear(vetor100000, vetor100000[vetor100000.length -1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
 
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        buscaLinear(vetor100000, vetor100000[(vetor100000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        buscaLinear(vetor100000, vetor100000[vetor100000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.println("\n--- Busca Binária ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
         buscaBinaria(vetor100000, vetor100000[0]);
-        buscaBinaria(vetor100000, vetor100000[vetor100000.length / 2]);
-        buscaBinaria(vetor100000, vetor100000[vetor100000.length -1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
 
-        long fim = System.nanoTime();
-        long duracaoMs = (fim - inicio) / 1000000;
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        buscaBinaria(vetor100000, vetor100000[(vetor100000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        buscaBinaria(vetor100000, vetor100000[vetor100000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
         System.out.println("Tempo: " + duracaoMs + " ms");
     }
 
     public static void preencherOrdenado(int[] vetor) {
         Random aleatorio = new Random();
-
         for (int i = 0; i < vetor.length; i++) {
             vetor[i] = aleatorio.nextInt(1000000); 
         }
