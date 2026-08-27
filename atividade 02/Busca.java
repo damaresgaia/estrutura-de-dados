@@ -60,6 +60,29 @@ public class Busca {
         duracaoMs = (fim - inicio) / 1000000;
         System.out.println("Tempo: " + duracaoMs + " ms");
 
+        System.out.println("\n--- Arrays.binarySearch ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor1000, vetor1000[0]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor1000, vetor1000[(vetor1000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor1000, vetor1000[vetor1000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+
 
         System.out.println("\n=== VETOR DE 10.000 ELEMENTOS ===");
         
@@ -107,6 +130,29 @@ public class Busca {
         duracaoMs = (fim - inicio) / 1000000;
         System.out.println("Tempo: " + duracaoMs + " ms");
 
+        System.out.println("\n--- Arrays.binarySearch ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor10000, vetor10000[0]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor10000, vetor10000[(vetor10000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor10000, vetor10000[vetor10000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+
 
         System.out.println("\n=== VETOR DE 100.000 ELEMENTOS ===");
         
@@ -153,6 +199,29 @@ public class Busca {
         fim = System.nanoTime();
         duracaoMs = (fim - inicio) / 1000000;
         System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.println("\n--- Arrays.binarySearch ---");
+        System.out.print("Início - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor100000, vetor100000[0]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Meio - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor100000, vetor100000[(vetor100000.length - 1) / 2]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
+        System.out.print("Fim - ");
+        inicio = System.nanoTime();
+        Arrays.binarySearch(vetor100000, vetor100000[vetor100000.length - 1]);
+        fim = System.nanoTime();
+        duracaoMs = (fim - inicio) / 1000000;
+        System.out.println("Tempo: " + duracaoMs + " ms");
+
     }
 
     public static void preencherOrdenado(int[] vetor) {
